@@ -6,5 +6,15 @@ pipeline{
        echo "this is build state"
       }
    }
+     stage('deploy'){
+      steps{
+       echo "this is deploy state"
+      }
+   }
+     stage('test'){
+      steps{
+       echo "this is test state"
+      }
+   }
 }
 }
