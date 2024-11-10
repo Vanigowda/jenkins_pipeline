@@ -4,13 +4,13 @@ pipeline{
     stage('Build'){
       steps{
        echo "this is build state"
-        sleep 5
+        sh 'sleep 5'
       }
    }
      stage('deploy'){
       steps{
        echo "this is deploy state"
-        sleep 5
+        sh 'sleep 5'
       }
    }
      stage('test'){
